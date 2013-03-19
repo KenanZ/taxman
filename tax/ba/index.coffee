@@ -30,7 +30,7 @@ exports.calculate = (query) ->
   # vat 17%
   # assumption: savings not large 
   # 16% of remaining income goes to VAT
-  calc.indirect = calc.net_income * 0.16
+  calc.indirect = calc.net_income * 0.165
   calc.net_income = calc.net_income - calc.indirect
 
   calc.total = calc.indirect + calc.direct
